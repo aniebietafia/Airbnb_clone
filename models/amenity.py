@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 """
-Defines amenities
+Module that defines a class Amenity inherit from BaseModel
 """
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Defines amenities that user can choose from to offer at its place"""
+    """Class Amenity"""
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """init model"""
+        super().__init__(*args, **kwargs)
